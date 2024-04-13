@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Clash of Clans",
+    "artist": "Supercell",
+    "appId": 529479190,
+    "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/e7/1b/e7/e71be75a-f354-9bf6-f51d-0c6a4c2ddc43/source/512x512bb.jpg",
+    "powerscore": 97
+  },
+  {
+    "name": "Clash Royale",
+    "artist": "Supercell",
+    "appId": 1053012308,
+    "iconUrl": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/dd/66/85/dd668551-93e1-cc6f-94f6-284d0f2c5afc/source/512x512bb.jpg",
+    "powerscore": 88
+  },
+  {
+    "name": "Roblox",
+    "artist": "Roblox Corporation",
+    "appId": 431946152,
+    "iconUrl": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/f5/04/bb/f504bb3c-702b-d8fb-468b-5ff07a9ee782/source/512x512bb.jpg",
+    "powerscore": 92
+  },
+  {
+    "name": "Candy Crush Saga",
+    "artist": "King",
+    "appId": 553834731,
+    "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/5f/73/b4/5f73b4d1-37b2-f148-f58a-ee506b616971/source/512x512bb.jpg",
+    "powerscore": 90
+  },
+  {
+    "name": "Pokémon GO",
+    "artist": "Niantic",
+    "appId": 1094591345,
+    "iconUrl": "https://is2-ssl.mzstatic.com/image/thumb/Purple114/v4/40/7c/0b/407c0b3f-95c9-2f0f-0c7e-a071c0ccf42b/source/512x512bb.jpg",
+    "powerscore": 96
+  }
+]

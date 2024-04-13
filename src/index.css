@@ -1,13 +1,85 @@
 body {
+  text-align: center;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*-----Header------*/
+
+.header {
+  padding-top: 20px;
+}
+#firmLogo {
+  width: 200px;
+}
+
+/*-----Table ------*/
+.tableBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(246, 240, 251);
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.tableBody h2 {
+  padding: 40px 0 30px;
+  margin: 0;
+}
+
+.tableWrapper {
+  width: 80%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+table {
+  background-color: white;
+  width: calc(100% + 2px);
+  margin: -1px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid grey;
+}
+
+th {
+  background-color: rgb(238, 238, 238);
+  padding: 4px 10px 4px;
+}
+
+th#click:hover,
+th#center:hover,
+a:hover {
+  cursor: pointer;
+}
+
+th#center {
+  text-align: left;
+  padding-left: 14px;
+}
+
+td#center {
+  text-align: left;
+  padding: 7px 0px 7px 14px;
+}
+
+.centerTableItem {
+  display: flex;
+  align-items: center;
+}
+
+#gameIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+#arrowLink {
+  width: 25px;
+  height: 25px;
 }
