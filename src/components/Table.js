@@ -115,7 +115,7 @@ const Table = () => {
                   <a
                     href={`https://apps.apple.com/us/app/${game.name}/id${game.appId}`}
                   >
-                    <img src='arrowLink.png' alt='link' id='arrowLink' />
+                    <img src='arrow.png' alt='link' id='arrowLink' />
                   </a>
                 </td>
               </tr>
