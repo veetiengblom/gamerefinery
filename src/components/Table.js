@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import dataService from '../services/dataService';
+import getAll from '../services/dataService';
 
 const Table = () => {
   const [games, setGames] = useState([]);
@@ -9,9 +9,13 @@ const Table = () => {
   const [showTriangle, setShowTriangle] = useState(false);
 
   const getGameData = () => {
-    dataService.getAll().then((gameData) => {
-      setGames(gameData);
-    });
+    getAll()
+      .then((gameData) => {
+        setGames(gameData);
+      })
+      .catch((error) => {
+        console.error('Error fetching game data:', error);
+      });
   };
 
   useEffect(getGameData, []);
