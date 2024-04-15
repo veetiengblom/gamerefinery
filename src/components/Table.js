@@ -17,16 +17,11 @@ const Table = () => {
   useEffect(getGameData, []);
 
   const sortByPowerScore = (flip) => {
-    setShowTriangle(true)
-    if (flip) {
-      const reverse = games.sort((a, b) => a.powerscore - b.powerscore);
-      setGames(reverse);
-      setAscendingPower(flip);
-      setTriangleOnGame(false);
-      return;
-    }
+    setShowTriangle(true);
+    const reverse = flip
+      ? games.sort((a, b) => a.powerscore - b.powerscore)
+      : games.sort((a, b) => b.powerscore - a.powerscore);
 
-    const reverse = games.sort((a, b) => b.powerscore - a.powerscore);
     setGames(reverse);
     setAscendingPower(flip);
     setTriangleOnGame(false);
@@ -34,20 +29,11 @@ const Table = () => {
   };
 
   const sortByName = (flip) => {
-    setShowTriangle(true)
-    if (flip) {
-      const reverse = games.sort((a, b) =>
-        a.name > b.name ? 1 : b.name > a.name ? -1 : 0
-      );
-      setGames(reverse);
-      setAscendingName(flip);
-      setTriangleOnGame(true);
-      return;
-    }
+    setShowTriangle(true);
+    const reverse = flip
+      ? games.sort((a, b) => (a.name > b.name ? 1 : b.name > a.name ? -1 : 0))
+      : games.sort((a, b) => (b.name > a.name ? 1 : a.name > b.name ? -1 : 0));
 
-    const reverse = games.sort((a, b) =>
-      b.name > a.name ? 1 : a.name > b.name ? -1 : 0
-    );
     setGames(reverse);
     setAscendingName(flip);
     setTriangleOnGame(true);
